@@ -1,12 +1,12 @@
 import tkinter
 
-button_values = {
+button_values = [
     ["AC", "+/-", "%", "÷"],
-    ["7", "8", "9", "x"],
+    ["7", "8", "9", "×"],
     ["4", "5", "6", "-"],
     ["1", "2", "3", "+"],
     ["0", ".", "√", "="],
-}
+]
 
 right_symbols = ["÷", "×", "-", "+", "="]
 top_symbols = ["AC", "+/-", "%"]
@@ -20,3 +20,12 @@ color_dark_gray = "#505050"
 color_orange = "#FF9500"
 color_white = "white"
 
+# window setup
+window = tkinter.Tk()
+window.title("Calculator")
+window.resizable(False, False)
+
+frame = tkinter.Frame(window)
+label = tkinter.Label(frame, text="0", font=("Arial", 45), background=color_black, foreground=color_white)
+
+window.mainloop()
